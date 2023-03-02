@@ -12,7 +12,7 @@ if not exist %rootSrc% (
 	exit /b
 )
 
-set folders=\media \media\lua \media\lua\client \media\lua\server \media\lua\shared \media\models \media\scripts \media\sounds \media\textures
+set folders=\media \media\anims_x \media\animsets \media\assets \media\lua \media\lua\client \media\lua\server \media\lua\shared \media\maps \media\models_x \media\scripts \media\sound \media\texturepacks \media\textures \media\ui
 
 :get_mod_name
 set /p modTitleName="Type mod name: "

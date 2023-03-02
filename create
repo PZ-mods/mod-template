@@ -7,7 +7,7 @@ if [[ ! -e $rootSrc ]]; then
 	exit
 fi
 
-folders=("/media" "/media/lua" "/media/lua/client" "/media/lua/server" "/media/lua/shared" "/media/models" "/media/scripts" "/media/sounds" "/media/textures")
+folders=("/media" "/media/anims_x" "/media/animsets" "/media/assets" "/media/lua" "/media/lua/client" "/media/lua/server" "/media/lua/shared" "/media/maps" "/media/models_x" "/media/scripts" "/media/sound" "/media/texturepacks" "/media/textures" "/media/ui")
 
 while [[ -z "$modTitleName" ]]; do
 	echo 'Type mod name:'
@@ -25,7 +25,7 @@ mv "$PWD" "$rootSrc"
 
 for folder in "${folders[@]}"; do
 	if [[ ! -e "${rootSrc}${folder}" ]]; then
-  	mkdir "${rootSrc}${folder}"
+		mkdir "${rootSrc}${folder}"
 	fi
 done
 
