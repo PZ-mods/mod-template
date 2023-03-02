@@ -12,7 +12,7 @@ if not exist %rootSrc% (
 	exit /b
 )
 
-set folders=\media \media\anims_x \media\animsets \media\assets \media\lua \media\lua\client \media\lua\server \media\lua\shared \media\maps \media\models_x \media\scripts \media\sound \media\texturepacks \media\textures \media\ui
+set folders=\media \media\anims_x \media\animsets \media\lua \media\lua\client \media\lua\server \media\lua\shared \media\maps \media\models_x \media\scripts \media\sound \media\texturepacks \media\textures \media\ui
 
 :get_mod_name
 set /p modTitleName="Type mod name: "
@@ -49,7 +49,7 @@ for /f %%a in ('dir %cd% /b') do (
 	)
 )
 
-echo  > %rootSrc%\complete.cmd
+echo @echo off > %rootSrc%\complete.cmd
 echo cd %rootSrc% >> %rootSrc%\complete.cmd
 echo del %cd%\create.cmd >> %rootSrc%\complete.cmd
 echo rmdir /q %cd% >> %rootSrc%\complete.cmd
