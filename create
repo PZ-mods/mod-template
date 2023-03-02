@@ -1,0 +1,40 @@
+#!/bin/bash
+
+rootSrc="${HOME}/Zomboid/mods"
+
+if [[ ! -e $rootSrc ]]; then
+	echo "Mod folder is not found"
+	exit
+fi
+
+folders=("/media" "/media/lua" "/media/lua/client" "/media/lua/server" "/media/lua/shared" "/media/models" "/media/scripts" "/media/sounds" "/media/textures")
+
+while [[ -z "$modTitleName" ]]; do
+	echo 'Type mod name:'
+	read modTitleName
+	modName=${modTitleName// /_}
+	rootSrc="${rootSrc}/${modName}"
+done
+
+while [[ -z "$modDescription" ]]; do
+	echo 'Type mod description:'
+	read modDescription
+done
+
+mv "$PWD" "$rootSrc"
+
+for folder in "${folders[@]}"; do
+	if [[ ! -e "${rootSrc}${folder}" ]]; then
+  	mkdir "${rootSrc}${folder}"
+	fi
+done
+
+echo -e "name=$modTitleName\nid=$modName\ndescription=$modDescription\nposter=poster.png\nrequire=\nurl=\n" > "${rootSrc}/mod.info"
+
+if [[ -e "${rootSrc}/create" ]]; then
+	rm "${rootSrc}/create"
+fi
+
+if [[ -e "${rootSrc}/create.cmd" ]]; then
+	rm "${rootSrc}/create.cmd"
+fi
