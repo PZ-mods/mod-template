@@ -1,3 +1,7 @@
+## Ссылки
+- [Форум](https://theindiestone.com/forums/index.php?/forum/45-pz-modding/)
+- [Вики](https://pzwiki.net/wiki/Category:Modding)
+- [Docs](https://projectzomboid.com/modding/)
 ## Структура мода
 * ./ (root mod folder)
 	* /media
@@ -51,4 +55,5 @@
 ##### ./mod.info
 > ?
 ##### ./poster.png
-> ?
+> Обложка мода 512x512
+> ![Обложка мода 512x512](https://github.com/PZ-mods/mod-template/raw/master/poster.png)
