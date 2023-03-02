@@ -37,11 +37,9 @@
 > Файлы карты
 ##### ./media/models_x
 > 3D модели .x или .fbx
-<br>
 > [Tutotial](https://theindiestone.com/forums/index.php?/topic/37647-the-one-stop-shop-for-3d-modeling-from-blender-to-zomboid/)
 ##### ./media/scripts
 > .txt файлы с описанием предметов
-<br>
 > [Guide](https://pzwiki.net/wiki/Scripts_guide)
 ##### ./media/sound
 > Звуки .wav
@@ -53,7 +51,6 @@
 > Изображения для иконок интерфейса
 ##### ./mod.info
 > Описание мода
-<br>
 ```
 name #Название мода
 id #Идентификатор мода
@@ -68,5 +65,4 @@ pack #Стороний пак(и) текстур используемые мод
 ```
 ##### ./poster.png
 > Обложка мода 512x512
-<br>
 > ![Обложка мода 512x512](https://github.com/PZ-mods/mod-template/raw/master/poster.png)
