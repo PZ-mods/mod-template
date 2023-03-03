@@ -31,8 +31,8 @@ if not defined modDescription (
 )
 
 for %%f in (%folders%) do (
-	if not exist %cd%%%f (
-		mkdir %cd%%%f
+	if not exist %rootSrc%%%f (
+		mkdir %rootSrc%%%f
 	)
 )
 
