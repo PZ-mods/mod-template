@@ -2,6 +2,7 @@
 - [Форум](https://theindiestone.com/forums/index.php?/forum/45-pz-modding/)
 - [Вики](https://pzwiki.net/wiki/Category:Modding)
 - [Docs](https://projectzomboid.com/modding/)
+- [Docs MrBounty](https://github.com/MrBounty/PZ-Mod---Doc)
 ## Структура мода
 * ./ (root mod folder)
 	* /media
